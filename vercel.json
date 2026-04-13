@@ -1,3 +1,5 @@
 {
-  "framework": "vite"
+  "buildCommand": "pnpm --filter frontend build && cp -r frontend/dist dist",
+  "outputDirectory": "dist",
+  "installCommand": "pnpm install"
 }
