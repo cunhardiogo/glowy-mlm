@@ -10,6 +10,10 @@ export default defineConfig({
       '@glowy/shared': path.resolve(__dirname, '../shared/src'),
     },
   },
+  build: {
+    outDir: '../dist',
+    emptyOutDir: true,
+  },
   server: {
     port: 5173,
   },
