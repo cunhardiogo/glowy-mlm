@@ -1,0 +1,60 @@
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "storage", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323
+
+[inbucket]
+enabled = true
+port = 54324
+
+[storage]
+enabled = true
+
+[auth]
+enabled = true
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["https://glowy-mlm.vercel.app"]
+
+[functions.credenciamento]
+verify_jwt = true
+
+[functions.pedidos]
+verify_jwt = true
+
+[functions.financeiro]
+verify_jwt = true
+
+[functions.extrato]
+verify_jwt = true
+
+[functions.bonus]
+verify_jwt = true
+
+[functions.rede]
+verify_jwt = true
+
+[functions.ciclos]
+verify_jwt = true
+
+[functions.qualificacao]
+verify_jwt = true
+
+[functions.admin]
+verify_jwt = true
+
+[functions.perfil]
+verify_jwt = true
+
+[functions.auth-fn]
+verify_jwt = false
