@@ -22,7 +22,7 @@ api.interceptors.response.use(
   (error) => {
     const msg = error.response?.data?.message || error.message || 'Erro desconhecido';
     if (error.response?.status === 401) {
-      toast.error('Sessão expirada');
+      // silently ignore — login page handles auth state
     } else if (error.response?.status >= 500) {
       toast.error('Erro no servidor');
     } else {
